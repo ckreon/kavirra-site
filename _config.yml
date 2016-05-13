@@ -7,13 +7,16 @@ company: 'Navala'
 
 # The 'home' link in the navbar is configured here -
 # Set these values to change your Homepage:
-home_url: '/'
+home_url: '#top-of-page'
 home_icon_title: 'Home'
 
 # FrontMatter Settings
 permalink: '/:title/' # clean URL's (xyz.com/title vs xyz.com/title.html)
 
 # Build Settings
+collections:
+  - books
+
 exclude:
   - README.md
   - LICENSE

@@ -1,0 +1,10 @@
+@mixin gradient-trans-vert($R, $G, $B, $FadeAt) {
+	background: rgba($R,$G,$B,1);
+	background: -moz-linear-gradient(top, rgba($R,$G,$B,1) 0%, rgba($R,$G,$B,1) $FadeAt, rgba($R,$G,$B,0) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba($R,$G,$B,1)), color-stop($FadeAt, rgba($R,$G,$B,1)), color-stop(100%, rgba($R,$G,$B,0)));
+	background: -webkit-linear-gradient(top, rgba($R,$G,$B,1) 0%, rgba($R,$G,$B,1) $FadeAt, rgba($R,$G,$B,0) 100%);
+	background: -o-linear-gradient(top, rgba($R,$G,$B,1) 0%, rgba($R,$G,$B,1) $FadeAt, rgba($R,$G,$B,0) 100%);
+	background: -ms-linear-gradient(top, rgba($R,$G,$B,1) 0%, rgba($R,$G,$B,1) $FadeAt, rgba($R,$G,$B,0) 100%);
+	background: linear-gradient(to bottom, rgba($R,$G,$B,1) 0%, rgba($R,$G,$B,1) $FadeAt, rgba($R,$G,$B,0) 100%);
+	filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 )";
+}

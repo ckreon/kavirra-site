@@ -1,4 +1,38 @@
 // Custom Styles
+// Bootstrap Overrides
+
+body {
+	padding-bottom: 0;
+}
+
+.center-block {
+	float: none;
+}
+
+.container {
+	margin-top: 2.7em;
+	padding-left: .3rem;
+	padding-right: .3rem;
+}
+
+.jumbotron {
+	padding: 2rem 0;
+}
+
+.marketing {
+	margin: 4rem 0;
+	padding: 0;
+}
+
+.footer {
+	padding-top: 1.5rem;
+}
+
+// Nav Bar
+#primary_nav_wrap {
+	background: #fff;
+}
+
 #primary_nav_wrap ul {
 	list-style: none;
 }
@@ -15,8 +49,9 @@
 	height: 0;
 	position: absolute;
 	top: 100%;
-	left: -.9rem;
-	background: $gray-dark;
+	left: -3rem;
+	background: #fff;
+	border-radius: .3rem;
 	padding: 0;
 	overflow: hidden;
 
@@ -37,6 +72,7 @@
 	height: auto;
 }
 
+// Fonts
 .font-cinzel {
 	font-family: $cinzel;
 }
@@ -46,7 +82,7 @@
 }
 
 // All Custom Elements Responding to Screen Size
-// Default sizes:
+// Default sizes
 #site-title {
 	font-size: 1.4rem;
 	color: #373a3c;
@@ -62,7 +98,7 @@
 }
 
 #undoubtedly {
-	background-image: url('/assets/images/undoubtedly_sm.jpg');
+	background-image: url(image_path('undoubtedly_sm.jpg'));
 	background-size: cover;
 	border: 2px solid black;
 }
@@ -93,7 +129,7 @@
 
 @media (min-width: 414px) {
 	#undoubtedly {
-		background-image: url('/assets/images/undoubtedly_med.jpg'); }
+		background-image: url(image_path('undoubtedly_med.jpg')); }
 	.flare {
 		display: inline;
 	}
@@ -127,7 +163,7 @@
 		padding: .5rem .5rem 1rem .5rem;
 	}
 	#undoubtedly {
-		background-image: url('/assets/images/undoubtedly_lg.jpg');
+		background-image: url(image_path('undoubtedly_lg.jpg'));
 	}
 	.text-backer {
 		width: 80%;
@@ -147,6 +183,32 @@
   .scl-lnk {
 		font-size: 2.2rem;
 	}
+}
+
+// Other Styles
+.anchor {
+	display: block;
+	height: 5em;
+	margin-top: -5em;
+	visibility: hidden;
+}
+
+.black-icn {
+	color: #373a3c;
+}
+
+a .black-icn:hover, .black-icn:focus {
+	background: rgba(255, 255, 255, 0.9);
+	color: black;
+}
+
+.bolder {
+	font-weight: bold;
+}
+
+.justifier {
+	text-align: justify;
+	text-justify: auto;
 }
 
 .text-backer-title {
@@ -173,11 +235,6 @@ a .scl-lnk:focus .scl-lnk-txt {
 	visibility: visible;
 }
 
-.black-icn {
-	color: #373a3c;
-}
-
-a .black-icn:hover, .black-icn:focus {
-	background: rgba(255, 255, 255, 0.9);
-	color: black;
+.small-text {
+	font-size: .7em;
 }

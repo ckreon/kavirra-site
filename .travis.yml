@@ -23,7 +23,7 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 sudo: false
 addons:
-  ssh_known_hosts: 123.123.123.123
+  ssh_known_hosts: 159.203.216.201
 before_install:
   - bash _scripts/1_install.sh
 script:

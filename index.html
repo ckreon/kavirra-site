@@ -5,8 +5,12 @@ title: Home
 
 <div class="starter-template">
 
-	{% include book_one.html %}
+	{% for book in site.books %}
 
-	{% include book_two.html %}
+		<span class="anchor" id="{{ book.title }}"></span>
+
+		{{ book.content }}
+
+	{% endfor %}
 
 </div> <!-- starter-template -->
