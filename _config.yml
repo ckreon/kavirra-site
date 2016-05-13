@@ -1,14 +1,9 @@
 # Site Settings
-title: 'Jekyll/TravisCI Project Skeleton'
+title: 'The Kavirra Trials'
+description: 'A book series focusing on the heroine Kavirra - set in the future, with magic, demons, and more!'
 
-description: 'A skeleton for Jekyll/TravisCI projects.'
-
-url: ''
-baseurl: '' # the subpath of your site, e.g. /blog
-company: ''
-email: ''
-github_user: ''
-github_url: ''
+# Site Variables
+company: 'Navala'
 
 # The 'home' link in the navbar is configured here -
 # Set these values to change your Homepage:
@@ -19,19 +14,12 @@ home_icon_title: 'Home'
 permalink: '/:title/' # clean URL's (xyz.com/title vs xyz.com/title.html)
 
 # Build Settings
-include:
-  - _pages
-
 exclude:
   - README.md
   - LICENSE
   - Gemfile
   - Gemfile.lock
   - vendor
-  # NODE STUFF:
-  #- gulpfile.js
-  #- node_modules
-  #- package.json
 
 gems:
   - jekyll-assets
@@ -42,13 +30,3 @@ gems:
 assets:
   sources:
     - _assets/icons
-
-# Markdown Settings
-markdown: 'redcarpet'
-redcarpet:
-  extensions:
-    - no_intra_emphasis
-    - tables
-    - autolink
-    - strikethrough
-    - with_toc_data

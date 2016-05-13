@@ -1,20 +1,20 @@
 language: ruby
 rvm:
-- 2.3.0
+- 2.3.1
 env:
   global:
     # Branch you want to deploy:
   - JTS_DBRANCH="master"
     # Server IP:
-  - JTS_SERV_IP="123.123.123.123"
+  - JTS_SERV_IP="159.203.216.201"
     # Server deploy path:
-  - JTS_SERV_DP="/var/www/SITE-FOLDER"
+  - JTS_SERV_DP="/var/www/kavirra-site"
     # Username for Travis deploy:
   - JTS_TRV_USR="deploy"
     # Filename of Travis key:
-  - JTS_KEYNAME="jts_deploy_key"
+  - JTS_KEYNAME="kavirra_deploy"
     # Gmail user (DO NOT ADD '@gmail.com'):
-  - JTS_GML_USE="USER"
+  - JTS_GML_USE="ckreon"
     # Timezone
   - TZ=America/Los_Angeles
     # Jekyll Variables

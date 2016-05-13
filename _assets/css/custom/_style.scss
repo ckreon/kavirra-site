@@ -1,20 +1,16 @@
 // Custom Styles
-
-#primary_nav_wrap ul
-{
+#primary_nav_wrap ul {
 	list-style: none;
 }
 
-#primary_nav_wrap ul li
-{
+#primary_nav_wrap ul li {
 	position: relative;
 	float: left;
 	margin: 0;
 	padding: 0 .5rem 0 .5rem;
 }
 
-#primary_nav_wrap ul ul
-{
+#primary_nav_wrap ul ul {
 	opacity: 0;
 	height: 0;
 	position: absolute;
@@ -31,14 +27,157 @@
   transition: all .1s ease .1s;
 }
 
-#primary_nav_wrap ul ul li
-{
+#primary_nav_wrap ul ul li {
 	float: none;
 	width: 9em;
 }
 
-#primary_nav_wrap ul li:hover > ul
-{
+#primary_nav_wrap ul li:hover > ul {
 	opacity: 1;
 	height: auto;
+}
+
+.font-cinzel {
+	font-family: $cinzel;
+}
+
+.font-noticia {
+	font-family: $noticia;
+}
+
+// All Custom Elements Responding to Screen Size
+// Default sizes:
+#site-title {
+	font-size: 1.4rem;
+	color: #373a3c;
+	padding: 0 .5rem 1rem .5rem;
+}
+
+#book-title1 {
+	font-size: 2rem;
+}
+
+#book-title2 {
+	font-size: 1.5rem;
+}
+
+#undoubtedly {
+	background-image: url('/assets/images/undoubtedly_sm.jpg');
+	background-size: cover;
+	border: 2px solid black;
+}
+
+.scl-lnk {
+	width: 2.8em;
+	height: 2.8em;
+	font-size: 1.8rem;
+	padding: .4em;
+	padding-bottom: 0;
+	margin: .6rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: .3rem;
+	display: inline-block;
+}
+
+.text-backer {
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: .3rem;
+	padding: 1rem;
+	color: black;
+	width: 100%;
+}
+
+.flare {
+	display: none;
+}
+
+@media (min-width: 414px) {
+	#undoubtedly {
+		background-image: url('/assets/images/undoubtedly_med.jpg'); }
+	.flare {
+		display: inline;
+	}
+	.scl-lnk {
+		margin: .5rem;
+	}
+}
+
+@media (min-width: 544px) {
+	#site-title {
+		font-size: 2rem;
+		padding: .2rem .5rem 1rem .5rem;
+	}
+	#book-title1 {
+		font-size: 3rem;
+	}
+	#book-title2 {
+		font-size: 1.8rem;
+	}
+	.scl-lnk {
+		font-size: 2rem;
+	}
+	.text-backer {
+		width: 90%;
+		padding: 1rem 2rem 1rem 2rem;
+	}
+}
+
+@media (min-width: 768px) {
+	#site-title {
+		padding: .5rem .5rem 1rem .5rem;
+	}
+	#undoubtedly {
+		background-image: url('/assets/images/undoubtedly_lg.jpg');
+	}
+	.text-backer {
+		width: 80%;
+	}
+}
+
+@media (min-width: 992px) {
+	#site-title {
+		font-size: 2.5rem;
+	}
+  #book-title1 {
+    font-size: 3.5rem;
+  }
+  #book-title2 {
+  	font-size: 2rem;
+  }
+  .scl-lnk {
+		font-size: 2.2rem;
+	}
+}
+
+.text-backer-title {
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: .3rem;
+	padding: 1rem;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+
+.scl-lnk-txt {
+	font-size: 35%;
+	padding-top: .5rem;
+	margin-bottom: 0;
+	visibility: hidden;
+}
+
+a .scl-lnk:hover .scl-lnk-txt {
+	visibility: visible;
+}
+
+a .scl-lnk:focus .scl-lnk-txt {
+	visibility: visible;
+}
+
+.black-icn {
+	color: #373a3c;
+}
+
+a .black-icn:hover, .black-icn:focus {
+	background: rgba(255, 255, 255, 0.9);
+	color: black;
 }
