@@ -8,7 +8,7 @@ chmod 600 _deploy/$JTS_KEYNAME
 mv _deploy/$JTS_KEYNAME ~/.ssh/$JTS_KEYNAME
 
 # Install Other Packages
-npm install
+#npm install
 
 # Install Zopfli
 git clone https://github.com/google/zopfli.git _zopfli

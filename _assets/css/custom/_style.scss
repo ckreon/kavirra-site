@@ -28,6 +28,10 @@ body {
 	padding-top: 1.5rem;
 }
 
+.navbar-brand {
+	font-size: .9rem;
+}
+
 // Nav Bar
 #primary_nav_wrap {
 	background: #fff;
@@ -72,6 +76,21 @@ body {
 	height: auto;
 }
 
+// For the Safari mobile browser
+#primary_nav_wrap img.close {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+#primary_nav_wrap ul:hover + img {
+	display: block;
+}
+
 // Fonts
 .font-cinzel {
 	font-family: $cinzel;
@@ -97,8 +116,20 @@ body {
 	font-size: 1.5rem;
 }
 
-#undoubtedly {
-	background-image: url(image_path('undoubtedly_sm.jpg'));
+#book1 {
+	background-image: url(image_path('book1_small.jpg'));
+	background-size: cover;
+	border: 2px solid black;
+}
+
+#book2 {
+	background-image: url(image_path('book1_small.jpg'));
+	background-size: cover;
+	border: 2px solid black;
+}
+
+#book3 {
+	background-image: url(image_path('book3_small.jpg'));
 	background-size: cover;
 	border: 2px solid black;
 }
@@ -128,10 +159,20 @@ body {
 }
 
 @media (min-width: 414px) {
-	#undoubtedly {
-		background-image: url(image_path('undoubtedly_med.jpg')); }
+	#book1 {
+		background-image: url(image_path('book1_med.jpg'));
+	}
+	#book2 {
+		background-image: url(image_path('book1_med.jpg'));
+	}
+	#book3 {
+		background-image: url(image_path('book3_med.jpg'));
+	}
 	.flare {
 		display: inline;
+	}
+	.navbar-brand {
+		font-size: 1.25rem;
 	}
 	.scl-lnk {
 		margin: .5rem;
@@ -162,8 +203,14 @@ body {
 	#site-title {
 		padding: .5rem .5rem 1rem .5rem;
 	}
-	#undoubtedly {
-		background-image: url(image_path('undoubtedly_lg.jpg'));
+	#book1 {
+		background-image: url(image_path('book1_large.jpg'));
+	}
+	#book2 {
+		background-image: url(image_path('book1_large.jpg'));
+	}
+	#book3 {
+		background-image: url(image_path('book3_large.jpg'));
 	}
 	.text-backer {
 		width: 80%;
