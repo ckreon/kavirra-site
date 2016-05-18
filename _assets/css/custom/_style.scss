@@ -28,10 +28,6 @@ body {
 	padding-top: 1.5rem;
 }
 
-.navbar-brand {
-	font-size: .9rem;
-}
-
 // Nav Bar
 #primary_nav_wrap {
 	background: #fff;
@@ -134,6 +130,14 @@ body {
 	border: 2px solid black;
 }
 
+.flare {
+	display: none;
+}
+
+.navbar-brand {
+	font-size: .9rem;
+}
+
 .scl-lnk {
 	width: 2.8em;
 	height: 2.8em;
@@ -152,10 +156,6 @@ body {
 	padding: 1rem;
 	color: black;
 	width: 100%;
-}
-
-.flare {
-	display: none;
 }
 
 @media (min-width: 414px) {
