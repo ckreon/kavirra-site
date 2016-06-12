@@ -112,20 +112,34 @@ body {
 	font-size: 1.5rem;
 }
 
+#book0 {
+	background-image: url(image_path('book0_xs.jpg'));
+	background-repeat: no-repeat;
+	background-color: $gray-dark;
+	background-size: cover;
+	border: 2px solid black;
+}
+
 #book1 {
-	background-image: url(image_path('book1_small.jpg'));
+	background-image: url(image_path('book1_xs.jpg'));
+	background-repeat: no-repeat;
+	background-color: $gray-dark;
 	background-size: cover;
 	border: 2px solid black;
 }
 
 #book2 {
-	background-image: url(image_path('book1_small.jpg'));
+	background-image: url(image_path('book2_xs.jpg'));
+	background-repeat: no-repeat;
+	background-color: $gray-dark;
 	background-size: cover;
 	border: 2px solid black;
 }
 
 #book3 {
-	background-image: url(image_path('book3_small.jpg'));
+	background-image: url(image_path('book3_xs.jpg'));
+	background-repeat: no-repeat;
+	background-color: $gray-dark;
 	background-size: cover;
 	border: 2px solid black;
 }
@@ -159,14 +173,17 @@ body {
 }
 
 @media (min-width: 414px) {
+	#book0 {
+		background-image: url(image_path('book0_sm.jpg'));
+	}
 	#book1 {
-		background-image: url(image_path('book1_med.jpg'));
+		background-image: url(image_path('book1_sm.jpg'));
 	}
 	#book2 {
-		background-image: url(image_path('book1_med.jpg'));
+		background-image: url(image_path('book2_sm.jpg'));
 	}
 	#book3 {
-		background-image: url(image_path('book3_med.jpg'));
+		background-image: url(image_path('book3_sm.jpg'));
 	}
 	.flare {
 		display: inline;
@@ -190,6 +207,18 @@ body {
 	#book-title2 {
 		font-size: 1.8rem;
 	}
+	#book0 {
+		background-image: url(image_path('book0_md.jpg'));
+	}
+	#book1 {
+		background-image: url(image_path('book1_md.jpg'));
+	}
+	#book2 {
+		background-image: url(image_path('book2_md.jpg'));
+	}
+	#book3 {
+		background-image: url(image_path('book3_md.jpg'));
+	}
 	.scl-lnk {
 		font-size: 2rem;
 	}
@@ -203,14 +232,17 @@ body {
 	#site-title {
 		padding: .5rem .5rem 1rem .5rem;
 	}
+	#book0 {
+		background-image: url(image_path('book0_lg.jpg'));
+	}
 	#book1 {
-		background-image: url(image_path('book1_large.jpg'));
+		background-image: url(image_path('book1_lg.jpg'));
 	}
 	#book2 {
-		background-image: url(image_path('book1_large.jpg'));
+		background-image: url(image_path('book2_lg.jpg'));
 	}
 	#book3 {
-		background-image: url(image_path('book3_large.jpg'));
+		background-image: url(image_path('book3_lg.jpg'));
 	}
 	.text-backer {
 		width: 80%;
@@ -227,6 +259,18 @@ body {
   #book-title2 {
   	font-size: 2rem;
   }
+  #book0 {
+		background-image: url(image_path('book0_xl.jpg'));
+	}
+	#book1 {
+		background-image: url(image_path('book1_xl.jpg'));
+	}
+	#book2 {
+		background-image: url(image_path('book2_xl.jpg'));
+	}
+	#book3 {
+		background-image: url(image_path('book3_xl.jpg'));
+	}
   .scl-lnk {
 		font-size: 2.2rem;
 	}
@@ -247,6 +291,10 @@ body {
 a .black-icn:hover, .black-icn:focus {
 	background: rgba(255, 255, 255, 0.9);
 	color: black;
+}
+
+.bigger {
+	font-size: 125%;
 }
 
 .bolder {

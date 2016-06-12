@@ -32,7 +32,7 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             #0275d8 !default;
+$brand-primary:             #8919BD !default;
 $brand-success:             #5cb85c !default;
 $brand-info:                #5bc0de !default;
 $brand-warning:             #f0ad4e !default;
@@ -123,10 +123,10 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 576px,
-  md: 720px,
+  sm: 95%,
+  md: 90%,
   lg: 940px,
-  xl: 1140px
+  xl: 940px
 ) !default;
 
 

@@ -5,8 +5,11 @@ exclude: true
 <div id="book0" class="jumbotron center-block">
 
   <div class="row marketing">
-    <div class="font-noticia text-backer center-block text-xs-center">
-      <p><span class="bolder">News:</span> The second book has been released! Check out <a href="#book2">Unforgivable</a> below.</p>
+    <div class="font-noticia text-backer-title bigger text-xs-center">
+
+	    {% capture banner_include %}{% include banner.md %}{% endcapture %}
+			{{ banner_include | markdownify }}
+
     </div>
   </div>
 
