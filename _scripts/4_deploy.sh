@@ -6,10 +6,8 @@ if [ $TRAVIS_PULL_REQUEST == false ] ; then
 	# Deploy to Production Server if branch is master
 	if [ $TRAVIS_BRANCH == $JTS_DBRANCH ] ; then
 		# Increase timeout time for TravisCI
-		travis_wait 30
-		
 		# Compress assets with Zopfli (add more directories/files as needed)
-		_zopfli/zopfli --i1000 _site/*.xml _site/*.html _site/assets/*
+				travis_wait 30 _zopfli/zopfli --i1000 _site/*.xml _site/*.html _site/assets/*
 
 		# Start SSH Agent
 		eval `ssh-agent -s`
