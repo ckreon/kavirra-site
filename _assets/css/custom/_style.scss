@@ -31,6 +31,7 @@ body {
 // Nav Bar
 #primary_nav_wrap {
 	background: #fff;
+	box-shadow: 0px 1px 5px rgba(55,58,60,.5);
 }
 
 #primary_nav_wrap ul {
@@ -70,6 +71,7 @@ body {
 #primary_nav_wrap ul li:hover > ul {
 	opacity: 1;
 	height: auto;
+	box-shadow: 0px 7px 5px rgba(55,58,60,.5);
 }
 
 // For the Safari mobile browser
@@ -100,7 +102,7 @@ body {
 // Default sizes
 #site-title {
 	font-size: 1.4rem;
-	color: #373a3c;
+	color: $gray-dark;
 	padding: 0 .5rem 1rem .5rem;
 }
 
