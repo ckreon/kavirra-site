@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ckreon/shadowlink-site.svg?branch=master)](https://travis-ci.org/ckreon/kavirra-site)
+[![Build Status](https://travis-ci.org/ckreon/ww-kavirra-site.svg?branch=master)](https://travis-ci.org/ckreon/ww-kavirra-site)
 
 **[The Kavirra Trials](http://thekavirratrials.com)**
 
